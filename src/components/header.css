@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.mainNav{
+    height: 10vh;
+    background-color: rgb(122, 104, 104);
+    display: flex;
+    justify-content: center;
+}
+.nuvLinks{
+    text-decoration: none;
+    color: burlywood;
+    margin-left: 15px;
+}

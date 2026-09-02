@@ -1,6 +1,19 @@
+import "./movieCard.css"
 
-export default function Moviecard() {
+export type MoviePropsType = {
+  id : number,
+  title : string,
+  body : string
+}
+
+
+export default function MovieCard(props : MoviePropsType) {
+  
   return (
-    <div>Moviecard</div>
+    <div className="movieCard">
+        {props.title}
+        <hr/>
+        {props.body}
+    </div>    
   )
 }

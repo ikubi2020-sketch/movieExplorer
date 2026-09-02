@@ -1,0 +1,12 @@
+.movieCard{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px black;
+    border-radius: 20px;
+    text-align: center;
+    background-color: gray;
+    color: black;
+    gap: 10px;
+    margin: 10px;
+    letter-spacing: 0.18px;
+}

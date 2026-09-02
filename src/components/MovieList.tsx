@@ -1,6 +1,8 @@
 
 export default function MovieList() {
   return (
-    <div>MovieList</div>
+    <div className="moviesList">
+          
+    </div>
   )
 }
