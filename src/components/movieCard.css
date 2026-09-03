@@ -10,3 +10,7 @@
     margin: 10px;
     letter-spacing: 0.18px;
 }
+.linkDetails{
+    text-decoration: none;
+    color: silver;
+}

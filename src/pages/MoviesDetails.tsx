@@ -18,7 +18,8 @@ export default function MoviesDetails() {
   const presented = movies?.find(movie => movie.id === newId)
   return (
     <div className="detailsMain">
-        <h1>movie details</h1>
+        <h1 className="headline">{presented?.name} details</h1>
+        <hr />
         <div>
           <MovieCard  key={presented?.id} id={presented?.id} rating={presented?.rating} image={presented?.image} name={presented?.name} summary={presented?.summary}/>
         </div>

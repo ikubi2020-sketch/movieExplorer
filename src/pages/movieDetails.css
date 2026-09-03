@@ -1,4 +1,9 @@
 .detailsMain{
+ background-color: black;
+}
+.headline{
     display: flex;
     justify-content: center;
+    background-color: black;
+    color:  white;
 }

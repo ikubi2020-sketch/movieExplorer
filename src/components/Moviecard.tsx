@@ -23,7 +23,7 @@ export default function MovieCard(props : MoviePropsType) {
         <br />
         {props.summary}
         <br />
-        <Link to={`/MovieDetails/${props.id}`}>view</Link>
+        <Link className="linkDetails" to={`/MovieDetails/${props.id}`}>view</Link>
     </div>    
   )
 }

@@ -1,6 +1,5 @@
 
-const movie = 
-  {
+const movie =  {
     "id": 1,
     "url": "https://www.tvmaze.com/shows/1/under-the-dome",
     "name": "Under the Dome",
