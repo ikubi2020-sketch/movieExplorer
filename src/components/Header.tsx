@@ -1,11 +1,11 @@
 import "./header.css"
-
+import { Link } from "react-router"
 
 export default function Header() {
   return (
    <div className="mainNav">
-    <a className="nuvLinks" href="http://localhost:5173/">Movie Explorer</a>
-    <a className="nuvLinks" href="http://localhost:5173/favorite">favorite</a>
+    <Link className="nuvLinks" to="/">Movie Explorer</Link>
+    <Link className="nuvLinks" to="/favorite">favorite</Link>
    </div>
   )
 }

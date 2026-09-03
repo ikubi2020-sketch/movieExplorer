@@ -28,7 +28,6 @@ function Movies({url} : myUrl) {
         <div className="moviesMain">
             {moviesSearched?.map(movie => (<MovieCard key={movie.id} id={movie.id} rating={movie.rating} image={movie.image} name={movie.name} summary={""}/>))}
         </div>
-
     </div>
   )
 }
