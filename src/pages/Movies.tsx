@@ -12,7 +12,7 @@ type myUrl = {
 function Movies({url} : myUrl) {
   const [movies, setMovies] = useState<MoviePropsType[]>()
   const [search , setSearch] = useState("")
-  const moviesSearched = movies?.filter( movie => movie.name.toLowerCase().includes(search) )
+  const moviesSearched = movies?.filter( movie => movie.name?.toLowerCase().includes(search) )
     useEffect(()=>{
     fetch(url)
     .then((res) => res.json())

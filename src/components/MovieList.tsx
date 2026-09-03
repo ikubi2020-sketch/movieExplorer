@@ -1,13 +1,4 @@
 
-export default function MovieList() {
-  return (
-    <div className="moviesList">
-          
-    </div>
-  )
-}
-
-
 const movie = 
   {
     "id": 1,
