@@ -7,3 +7,10 @@
     background-color: black;
     color:  white;
 }
+.buttonFavorite{
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 20px;
+    background-color: gray;
+    margin-left: 46%;
+}

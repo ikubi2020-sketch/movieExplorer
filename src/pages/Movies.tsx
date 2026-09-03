@@ -26,7 +26,7 @@ function Movies({url} : myUrl) {
         <input className="searchMovie" type="text"  placeholder="search movie" value={search} onChange={(e)=> setSearch(e.target.value.toLowerCase())}/>
       </div>
         <div className="moviesMain">
-            {moviesSearched?.map(movie => (<MovieCard key={movie.id} id={movie.id} rating={movie.rating} image={movie.image} name={movie.name} summary={movie.summary}/>))}
+            {moviesSearched?.map(movie => (<MovieCard key={movie.id} id={movie.id} rating={movie.rating} image={movie.image} name={movie.name} summary={""}/>))}
         </div>
 
     </div>
