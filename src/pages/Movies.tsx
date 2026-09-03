@@ -12,7 +12,7 @@ type myUrl = {
 function Movies({url} : myUrl) {
   const [movies, setMovies] = useState<MoviePropsType[]>()
   const [search , setSearch] = useState("")
-  const moviesSearched = movies?.filter( movie => movie.title.toLowerCase().includes(search) )
+  const moviesSearched = movies?.filter( movie => movie.name.toLowerCase().includes(search) )
     useEffect(()=>{
     fetch(url)
     .then((res) => res.json())
@@ -21,11 +21,12 @@ function Movies({url} : myUrl) {
   }, [url])
   return (
     <div>
+      <div className="searchBar">
         <h1>discover movie</h1>
         <input className="searchMovie" type="text"  placeholder="search movie" value={search} onChange={(e)=> setSearch(e.target.value.toLowerCase())}/>
-        
+      </div>
         <div className="moviesMain">
-            {moviesSearched?.map(movie => (<MovieCard key={movie.id} id={movie.id} title={movie.title} body={movie.body}/>))}
+            {moviesSearched?.map(movie => (<MovieCard key={movie.id} id={movie.id} rating={movie.rating} image={movie.image} name={movie.name} summary={movie.summary}/>))}
         </div>
 
     </div>
@@ -33,9 +34,3 @@ function Movies({url} : myUrl) {
 }
 
 export default  memo(Movies)
-
-
-{/* 
-        <div className="moviesMain">
-            {movies?.map(movie => (<MovieCard key={movie.id} id={movie.id} title={movie.title} body={movie.body}/>))}
-        </div> */}

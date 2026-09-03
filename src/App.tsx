@@ -19,9 +19,9 @@ function App() {
     
     <Routes>
       <Route element={<LayOut/>}>
-        <Route path='/' element={<Movies url={"https://jsonplaceholder.typicode.com/posts"}/>}/>
+        <Route path='/' element={<Movies url={"https://api.tvmaze.com/shows"}/>}/>
         <Route path='/favorite' element={<Favorites/>}/>
-        <Route path='/moviesexplorer' element={<MoviesDetails/>}/>
+        <Route path='/MovieDetails/:id' element={<MoviesDetails/>}/>
       </Route>
     </Routes>
     

@@ -3,3 +3,12 @@
     grid-template-columns: repeat(3, 1fr) ;
     background-color: black;
 }
+.searchMovie{
+    padding: 8px;
+    border: solid 3px black;
+    border-radius: 20px;
+    background-color: darkslategray;
+}
+.searchBar{
+    background-color: darkgray;
+}

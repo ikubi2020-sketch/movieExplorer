@@ -1,6 +1,11 @@
 
+
+
 export default function MoviesDetails() {
   return (
-    <div>MoviesDetails</div>
+    <div className="detailsMain">
+        <h1>movie details</h1>
+
+    </div>
   )
 }
